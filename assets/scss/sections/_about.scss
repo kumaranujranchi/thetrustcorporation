@@ -96,7 +96,11 @@
                 right: 0;
                 top: 0;
                 & img{
+                    max-width: 276px;
                     border-radius: 20px;
+                    @include respond(md){
+                        max-width: 100%;
+                    }
                 }
                 @include respond(md){
                     position: relative;
